@@ -6,10 +6,37 @@
     <Name>CasoEstudioNeptuno.database</Name>
     <FullPath>CasoEstudioNeptuno.database</FullPath>
   </Database>
+  <DataSources>
+    <ProjectItem>
+      <Name>Neptuno.ds</Name>
+      <FullPath>Neptuno.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Neptuno.dsv</Name>
+      <FullPath>Neptuno.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Neptuno</Id>
+            <Name>Neptuno</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=neptuno</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Neptuno</Id>
+            <Name>Neptuno</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
